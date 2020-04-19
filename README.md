@@ -9,7 +9,7 @@ You can load it using:
 
 ```Smalltalk
 Metacello new
-    baseline: 'AwesomePharoPresenter';
+    baseline: 'AwesomePharo';
     repository: 'github://bergel/AwesomePharoPresenter/src';
     load.
 ```   
