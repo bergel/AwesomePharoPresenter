@@ -95,7 +95,7 @@ AwesomePharoPresenter >> itemsFromAwesomePharoWebpage [
 		description := l copyFrom: (l indexOfSubCollection: ' - ') + 3 to: l size.
 		projectName, ' - ', description
 	].
-	^ result sortedAs: [ :l1 :l2 | l1 < l2 ]
+	^ result sort: [ :l1 :l2 | l1 < l2 ]
 	
 ]
 
