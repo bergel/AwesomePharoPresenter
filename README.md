@@ -4,7 +4,7 @@ A small UI that list the awesome Pharo projects, found [here](https://github.com
 
 Here is a screenshot:
 
-<img width="350" height="350" alt="portfolio_view" src="https://github.com/bergel/AwesomePharoPresenter/blob/master/screenshots/scr01.png">
+<img width="350" alt="portfolio_view" src="https://github.com/bergel/AwesomePharoPresenter/blob/master/screenshots/scr01.png">
 
 You can load it using:
 
