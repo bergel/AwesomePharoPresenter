@@ -8,9 +8,9 @@ Class {
 	#instVars : [
 		'list',
 		'label',
-		'actionBar',
 		'selectedItem',
-		'urls'
+		'urls',
+		'buttonBar'
 	],
 	#category : #AwesomePharo
 }
@@ -21,7 +21,7 @@ AwesomePharoPresenter class >> defaultSpec [
 		add: 'Awesome projects' withConstraints: [ :constraints | constraints height: self labelHeight ];
 		add: #list;
 		add: #label withConstraints: [ :constraints | constraints height: self labelHeight ];
-		add: #actionBar withConstraints: [ :constraints | constraints height: self buttonHeight ];
+		add: #buttonBar withConstraints: [ :constraints | constraints height: self buttonHeight ];
 		yourself
 ]
 
@@ -70,9 +70,9 @@ AwesomePharoPresenter >> initializePresenters [
 	list items: self itemsFromAwesomePharoWebpage.
 	label label: 'No selection'.
 	
-	actionBar := self newActionBar
+	buttonBar := self newButtonBar
 		add: (self newButton
-					label: 'Jump to GitHub';
+					label: 'GitHub it';
 					icon: (self iconNamed: #smallOk);
 					action: [ self jumpToGitHub ] );
 		add: (self newButton
